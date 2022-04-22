@@ -1,0 +1,219 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+///// Use type-scale.com for nice (and scaled) font sizes.
+*/
+
+/* CSS Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter";
+  color: #343a40;
+  border-bottom: 8px solid #087f5b;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+/* //////////////////////// */
+/* HEADER */
+
+.header-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  margin: 64px 0;
+  align-items: center;
+  margin-bottom: 96px;
+}
+
+.header-title {
+  font-size: 44px;
+  margin-bottom: 32px;
+}
+
+.header-text {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-decoration: none;
+  color: #fff;
+  background-color: #087f5b;
+  border-radius: 100px;
+}
+
+.btn:hover {
+  background-color: #099268;
+}
+
+.btn-big {
+  font-size: 18px;
+  padding: 15px 30px;
+}
+
+.header-img {
+  width: 440px;
+  border-radius: 10px;
+}
+
+/* PRODUCT DESCRIPTION */
+
+.description-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 64px;
+  margin-bottom: 96px;
+}
+
+.description-title {
+  font-size: 36px;
+  margin-bottom: 48px;
+}
+
+.description-subtitle {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.description-text {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.description-icon {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 16px;
+}
+
+/* TESTIMONAL */
+
+.testimonial-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 64px;
+  padding: 24px;
+  background-color: #087f5b;
+  margin-bottom: 96px;
+  border-radius: 12px;
+}
+
+.testimonial-img {
+  height: 200px;
+  border-radius: 12px;
+}
+
+.testimonial-text-box {
+  grid-column: 2 / -1;
+}
+
+.testimonial-title {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 24px;
+}
+
+.testimonial-text {
+  font-size: 18px;
+  color: #c3fae8;
+  font-style: italic;
+  margin-bottom: 24px;
+}
+
+.testimonial-author {
+  font-size: 16px;
+  color: #96f2d7;
+}
+
+/* PRODUCTS */
+
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 80px;
+  margin-bottom: 96px;
+}
+
+.product-box {
+  box-shadow: 0px 5px 40px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+.product-title {
+  font-size: 36px;
+  margin-bottom: 48px;
+}
+
+.product-img {
+  width: 100%;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.product-name {
+  font-size: 20px;
+  margin-bottom: 32px;
+}
+
+.product-specs {
+  list-style: none;
+  margin-bottom: 48px;
+}
+
+.product-specs li {
+  margin-bottom: 16px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.price-cart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-details {
+  padding: 32px;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.product-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.btn-small {
+  font-size: 14px;
+  padding: 8px 12px;
+}
+
+/* FOOTER */
+
+footer {
+  font-size: 14px;
+  margin-bottom: 48px;
+}
